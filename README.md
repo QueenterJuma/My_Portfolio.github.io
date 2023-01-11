@@ -31,9 +31,9 @@
 - [📝 License](#license)
 
 
-# 📖 [My_HelloMicroverse] <a name="about-project"></a>
+# 📖 [Portfolio_one] <a name="about-project"></a>
 
-**[My_HelloMicroverse]** The goal of this project is to master all the tools and best practices that I will use in all of my projects in Microverse and in the work place as well
+**[Portfolio_one]** The goal of this project is to master all the tools and best practices that I will use in all of my projects in Microverse and in the work place as well
 
 ## 🛠 Built With <a name="built-with"></a>
 -HTML
@@ -68,7 +68,7 @@ Clone this repository to your desired folder:
 
 Install this project with:
 ```
-git clone https://github.com/QueenterJuma/My_HelloMicroverse.git
+git clone https://github.com/QueenterJuma/Portfolio_one.git
 ```
 Navigate to the folder
 ```
@@ -76,7 +76,7 @@ repo-name (My_HelloMicroverse)
 ```
 Checkout the branch
 ```
-git checkout branch_Hello
+git checkout branch_Mobile
 ```
 
 ### Run tests
