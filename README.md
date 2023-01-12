@@ -33,7 +33,7 @@
 
 # 📖 [Portfolio_one] <a name="about-project"></a>
 
-**[Portfolio_one]** The goal of this project is to master all the tools and best practices that I will use in all of my projects in Microverse and in the work place as well
+**[Portfolio_one]** The goal of this project is to create a UI personal portfolio site using Figma design and using Flexbox to place element in the page. Also, adding images and background to enhance the look of the website
 
 ## 🛠 Built With <a name="built-with"></a>
 -HTML
