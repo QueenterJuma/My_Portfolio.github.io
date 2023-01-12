@@ -33,11 +33,12 @@
 
 # 📖 [Portfolio_one] <a name="about-project"></a>
 
-**[Portfolio_one]** The goal of this project is to master all the tools and best practices that I will use in all of my projects in Microverse and in the work place as well
+**[Portfolio_one]** The goal of this project is to create a UI personal portfolio site using Figma design and using Flexbox to place element in the page. Also, adding images and background to enhance the look of the website
 
 ## 🛠 Built With <a name="built-with"></a>
 -HTML
 -CSS
+-JavaScript
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -72,7 +73,7 @@ git clone https://github.com/QueenterJuma/Portfolio_one.git
 ```
 Navigate to the folder
 ```
-repo-name (My_HelloMicroverse)
+repo-name (Portfolio_one)
 ```
 Checkout the branch
 ```
@@ -82,7 +83,7 @@ git checkout branch_Mobile
 ### Run tests
 
 To run tests, run the following command:
-npx stylelint "**/*.{css,scss}" in the terminal to check for linters errsor
+npx stylelint "**/*.{css,scss}" in the terminal to check for linters errors
 
 ## 👥 Author <a name="authors"></a>
 
