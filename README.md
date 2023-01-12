@@ -38,6 +38,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 -HTML
 -CSS
+-JavaScript
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -72,7 +73,7 @@ git clone https://github.com/QueenterJuma/Portfolio_one.git
 ```
 Navigate to the folder
 ```
-repo-name (My_HelloMicroverse)
+repo-name (Portfolio_one)
 ```
 Checkout the branch
 ```
@@ -82,7 +83,7 @@ git checkout branch_Mobile
 ### Run tests
 
 To run tests, run the following command:
-npx stylelint "**/*.{css,scss}" in the terminal to check for linters errsor
+npx stylelint "**/*.{css,scss}" in the terminal to check for linters errors
 
 ## 👥 Author <a name="authors"></a>
 

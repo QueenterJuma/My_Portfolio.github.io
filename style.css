@@ -153,6 +153,11 @@
   margin: 12px 0;
 }
 
+.social {
+  align-items: center;
+  margin-left: 25px;
+}
+
 .social h4 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
