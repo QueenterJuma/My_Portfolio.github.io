@@ -121,17 +121,23 @@
   background-color: azure;
 }
 
-.headline {
+.first-page {
   background-image: url("./image/mobile.png");
   background-repeat: no-repeat;
   display: flex;
-  height: 600px;
   flex-direction: column;
   background-size: 100%;
 }
 
+.headline {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .me {
-  margin: 102px 24px 0;
+  margin: 5rem 0;
 }
 
 .me h1 {
@@ -141,6 +147,9 @@
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .me p {
@@ -150,12 +159,14 @@
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin: 12px 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .social {
   align-items: center;
-  margin-left: 25px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .social h4 {
@@ -165,10 +176,14 @@
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin-top: -5rem;
+  padding-bottom: 0.5em;
 }
 
 .social .social-icon ul {
   display: flex;
+  gap: 0.7rem;
+  padding-bottom: 5rem;
 }
 
 .social .social-icon ul li {
@@ -182,4 +197,193 @@
 
 .social .social-text {
   margin-top: 1rem;
+}
+
+.card {
+  display: grid;
+  padding: 7rem 0;
+  height: auto;
+  width: 100%;
+  gap: 7rem;
+  background: #e5e5e5;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 570px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  width: 100%;
+  height: 57vh;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.card-content h3 {
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card-content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 14px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.institution {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.tech {
+  font-weight: 500px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6070ff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.tech li {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #6070ff;
+  background: #ebebff;
+  height: 4.5vh;
+  align-items: center;
+  display: flex;
+}
+
+button {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 10px;
+  color: #396fd2;
+  border: 1px solid #396fd2;
+  background-color: #fff;
+  border-radius: 10px;
+  height: min-content;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #396fd2;
+}
+
+button:active {
+  background-color: #2230d2;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.about-page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-para {
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.social .icons ul {
+  display: flex;
+  gap: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.social .icons ul li {
+  display: flex;
+}
+
+.social .icons ul li a {
+  color: #505f79;
+  font-size: 1.5em;
+}
+
+.dash {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  width: 90%;
+}
+
+.java {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 1rem;
+  background: #f7f7f9;
+  height: 12vh;
+  padding-left: 0.7rem;
+}
+.arro {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  width: 90%;
+}
+
+.hr-line {
+  margin: 0.5rem 1rem;
+}
+
+.last {
+  padding-bottom: 4rem;
 }
