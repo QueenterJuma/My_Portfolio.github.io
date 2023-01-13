@@ -368,6 +368,12 @@ button:active {
   padding-left: 0.7rem;
 }
 
+.frame-arro {
+  margin-left: 316px;
+  position: relative;
+  top: -22px;
+}
+
 .arro {
   display: flex;
   justify-content: space-between;
