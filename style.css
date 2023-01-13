@@ -46,6 +46,17 @@
   margin-top: 2rem;
 }
 
+.tech li {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #6070ff;
+  background: #ebebff;
+  height: 4.5vh;
+  align-items: center;
+  display: flex;
+}
+
 .nav ul li {
   margin: 1rem;
 }
@@ -277,17 +288,6 @@
   margin-bottom: 18px;
 }
 
-.tech li {
-  margin-right: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  color: #6070ff;
-  background: #ebebff;
-  height: 4.5vh;
-  align-items: center;
-  display: flex;
-}
-
 button {
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
@@ -328,6 +328,7 @@ button:active {
   padding-bottom: 1rem;
   text-align: left;
 }
+
 .social .icons ul {
   display: flex;
   gap: 1.2rem;
@@ -348,12 +349,12 @@ button:active {
   justify-content: space-between;
   padding-top: 2rem;
   margin: 0 auto;
-  font-family: "Poppins";
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
   width: 90%;
 }
 
@@ -366,17 +367,18 @@ button:active {
   height: 12vh;
   padding-left: 0.7rem;
 }
+
 .arro {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
   margin: 0 auto;
-  font-family: "Poppins";
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
   width: 90%;
 }
 
