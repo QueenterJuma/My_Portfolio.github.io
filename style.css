@@ -395,3 +395,74 @@ button:active {
 .last {
   padding-bottom: 4rem;
 }
+
+
+.form-cantact {
+  background-image: url(./image/form-img2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 100px 24px 40px 24px;
+  text-align: center;
+  background-color: #6070ff;
+  border-top-left-radius: 100px;
+  padding-top: 50px;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.form-cantact h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.form-cantact p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #ebebff;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.form-cantact form {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-cantact input {
+  border: 1px solid #cfd8cf;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  height: 48px;
+  width: 327px;
+}
+.form-cantact textarea {
+  border: 1px solid #cfd8cf;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 10px;
+  width: 327px;
+  height: 170px;
+  font-size: 17px;
+}
+.form-cantact button {
+  margin-left: -190px;
+}
