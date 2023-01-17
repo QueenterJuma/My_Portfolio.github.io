@@ -93,6 +93,9 @@ npx stylelint "**/*.{css,scss}" in the terminal to check for linters errors
 - Twitter: (https://twitter.com/QueenJumah)
 - LinkedIn:(https://www.linkedin.com/in/queenter-juma-54a0b1222/)
 
+## Colaborators
+-stephenkati
+
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!  
