@@ -77,7 +77,7 @@ repo-name (Portfolio_one)
 ```
 Checkout the branch
 ```
-git checkout branch_Mobile
+git checkout branch_form
 ```
 
 ### Run tests

@@ -396,7 +396,6 @@ button:active {
   padding-bottom: 4rem;
 }
 
-
 .form-cantact {
   background-image: url(./image/form-img2.png);
   background-repeat: no-repeat;
@@ -454,6 +453,7 @@ button:active {
   height: 48px;
   width: 327px;
 }
+
 .form-cantact textarea {
   border: 1px solid #cfd8cf;
   border-radius: 8px;
@@ -463,6 +463,7 @@ button:active {
   height: 170px;
   font-size: 17px;
 }
+
 .form-cantact button {
   margin-left: -190px;
 }
