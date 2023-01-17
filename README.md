@@ -77,7 +77,7 @@ repo-name (Portfolio_one)
 ```
 Checkout the branch
 ```
-git checkout branch_Mobile
+git checkout branch_form
 ```
 
 ### Run tests
@@ -92,6 +92,9 @@ npx stylelint "**/*.{css,scss}" in the terminal to check for linters errors
 - GitHub:(https://github.com/QueenterJuma)
 - Twitter: (https://twitter.com/QueenJumah)
 - LinkedIn:(https://www.linkedin.com/in/queenter-juma-54a0b1222/)
+
+## Colaborators
+-stephenkati
 
 ## 🤝 Contributing <a name="contributing"></a>
 
