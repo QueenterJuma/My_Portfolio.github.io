@@ -10,6 +10,16 @@
   scroll-behavior: smooth;
 }
 
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -26,7 +36,7 @@
   color: #6070ff;
 }
 
-.nav {
+.nav ul {
   display: none;
 }
 
@@ -234,6 +244,10 @@
   width: 100%;
   height: auto;
 }
+
+/* .one {
+  background-image: url(./image/pic1.png);
+} */
 
 .card-content {
   width: 100%;
@@ -466,4 +480,45 @@ button:active {
 
 .form-cantact button {
   margin-left: -190px;
+}
+
+@media (min-width: 768px) {
+  /* .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  }
+  .nav ul {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .first-page {
+    background-image: url(./image/dec-intro.png);
+  }
+
+  .headl1 {
+    margin: 5em 18em 0;
+    width: 600px;
+  }
+
+  .card-image img .one {
+    background-image: url(./image/dec1.png);
+  }
+
+  .two {
+    background-image: url(./image/dec2.png);
+  }
+
+  .three {
+    background-image: url(./image/dec3.png);
+  }
+
+  .four {
+    background-image: url(./image/dec4.png);
+  }
+
 }
