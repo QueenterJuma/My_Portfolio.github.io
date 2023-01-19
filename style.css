@@ -245,6 +245,35 @@
   height: auto;
 }
 
+.canopy {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #344563;
+}
+
+/* card image media querry */
+@media only screen and (min-width: 768px) {
+  .card-image img {
+    Width: 544px;
+    Height: 448px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #fff;
+    border-radius: 24px;
+    padding: 1rem;
+    height: 486px;
+    width: 1156px;
+    margin: 0 auto;
+    gap: 3.5em;
+  }
+  
+}
+
 /* .one {
   background-image: url(./image/pic1.png);
 } */
@@ -265,7 +294,7 @@
 
 .card-content p {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #344563;
   margin-top: 14px;
@@ -274,14 +303,17 @@
 }
 
 .institution {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
+}
+
+.year {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6B778C;
 }
 
 .dot {
@@ -293,13 +325,19 @@
 }
 
 .tech {
-  font-weight: 500px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070FF;
   display: flex;
   align-items: center;
   margin-bottom: 18px;
+}
+
+.tech ul li a {
+  text-decoration: none;
+  color: #6070FF;
 }
 
 button {
@@ -336,6 +374,20 @@ button:active {
 .about-page {
   width: 90%;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5em;
+  }
+  .about-me-left {
+    width: 40%;
+  }
+  .about-me-right {
+    width: 60%;
+  }
 }
 
 .about-para {
