@@ -17,10 +17,10 @@
         <a href="index.html">Juma</a>
       </div>
       <nav class="nav">
-        <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="nav-item">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="toggle" id="toggle">
@@ -68,11 +68,11 @@
         </div>
       </div>
     </sectiion>
-    <section class="card">
-      <div class="card-container">
-        <div class="card-image ">
-          <!-- <div class="one"></div> -->
-          <img class="one" src="./image/pic1.png" alt="img" />
+    <section class="card" id="portfolio">
+      <div class="card-container one">
+        <div class="card-image">
+          <img class="mob" src="./image/pic1.png" alt="mobile img" />
+          <img  class="dec" src="./image/dec1.png" alt="desktop img">
         </div>
         <div class="card-content">
           <h3>Tonic</h3>
@@ -95,9 +95,10 @@
           <button>See Project</button>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card-image two">
-          <img src="./image/pic2.png" alt="img" />
+      <div class="card-container two">
+        <div class="card-image">
+          <img class="mob" src="./image/pic2.png" alt="mobile img" />
+          <img  class="dec reverse" src="./image/dec2.png" alt="desktop img">
         </div>
         <div class="card-content">
           <h3>Multipost Stories</h3>
@@ -120,9 +121,10 @@
           <button>See Project</button>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card-image three">
-          <img src="./image/pic3.png" alt="img" />
+      <div class="card-container three">
+        <div class="card-image">
+          <img class="mob" src="./image/pic3.png" alt="mobile img" />
+          <img  class="dec" src="./image/dec3.png" alt="desktop img">
         </div>
         <div class="card-content">
           <h3>Tonic</h3>
@@ -145,9 +147,10 @@
           <button>See Project</button>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card-image four">
-          <img src="./image/pic4.png" alt="img" />
+      <div class="card-container four">
+        <div class="card-image">
+          <img class="mob" src="./image/pic4.png" alt="mobile img" />
+          <img  class="dec reverse" src="./image/dec4.png" alt="desktop img">
         </div>
         <div class="card-content">
           <h3>Multipost Stories</h3>
@@ -215,8 +218,7 @@
           </div>
         </div>
         
-        <div class="about-me-right">
-          <ul class="language">
+          <ul class="language about-me-right">
             <li>
               <ul class="dash">
                 <p class="frame">Languages</p>
@@ -225,47 +227,41 @@
                 </li>
               </ul>
               <ul class="lang">
-              <li class="java">
-                <img src="./image/js.png" alt="js logo" />
-                <p>Javascript</p>
-              </li>
-              <li class="java">
-                <img src="./image/html.png" alt="html logo" />
-                <p>HTML</p>
-              </li>
-              <li class="java">
-                <img src="./image/css.png" alt="css logo" />
-                <p>CSS</p>
-              </li>
+                <li class="java">
+                  <img src="./image/js.png" alt="js logo" />
+                  <p>Javascript</p>
+                </li>
+                <li class="java">
+                  <img src="./image/html.png" alt="html logo" />
+                  <p>HTML</p>
+                </li>
+                <li class="java">
+                  <img src="./image/css.png" alt="css logo" />
+                  <p>CSS</p>
+                </li>
             </ul>
             <ul class="skill">
               <li class="arro">
-                <p class="frame">Frameworks</p>
-                <li class="fa fa-chevron-right frame-arro"></li>
+                <p class="frame">Frameworks<li class="fa fa-chevron-right frame-arro"></li></p>
               </li>
               <div class="hr-line"><hr /></div>
               <li class="arro">
-                <p class="frame">Skill</p>
-                <li class="fa fa-chevron-right frame-arro"></li>
+                <p class="frame">Skill<li class="fa fa-chevron-right frame-arro"></li></p>
               </li>
               <div class="hr-line last"><hr /></div>
             </ul>
             </li> 
           </ul>
-        </div>
-    
       </div>
     </section>
     
-    <footer class="form-cantact">
+    <footer class="form-cantact" id="contact">
       <div class="form-container">
         <h2>Contact me</h2>
         <p class="form-paragraph">
-          If you have an application you <br>
-          are interested in developing, a <br>
-          feature that you need built or a <br>
-          project that needs coding. I’d <br>
-          love to help with it
+          If you have an application you <br>are interested in 
+          developing, a <br>feature that you need built or a <br>
+          project that needs coding. I’d <br>love to help with it
         </p>
         <form action="https://formspree.io/f/mqkjggay" method="post">
           <input type="text" name="name" maxlength="30" placeholder="Queenter" required><br>
