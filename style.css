@@ -80,6 +80,11 @@
   color: #344563;
 }
 
+.tech ul li a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
 .nav.open ul li a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -291,7 +296,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 .dot {
@@ -307,15 +312,10 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   display: flex;
   align-items: center;
   margin-bottom: 18px;
-}
-
-.tech ul li a {
-  text-decoration: none;
-  color: #6070FF;
 }
 
 button {
@@ -499,10 +499,10 @@ button:active {
 }
 
 @media (min-width: 489px) and (max-width: 767px) {
-   .toolbar {
+  .toolbar {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
   }
 
   .mylogo {
@@ -513,7 +513,6 @@ button:active {
     display: flex;
     justify-content: flex-end;
     margin-left: 390px;
-  
   }
 
   .nav ul {
@@ -522,6 +521,13 @@ button:active {
 
   .nav-item {
     margin-left: 444px;
+  }
+
+  .lang li {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
   }
 
   .nav ul li {
@@ -540,7 +546,6 @@ button:active {
     width: 100%;
     min-height: 100vh;
     padding: 22px;
-
   }
 
   .headl1 {
@@ -549,8 +554,8 @@ button:active {
   }
 
   .card-image img {
-    Width: 544px;
-    Height: 448px;
+    width: 544px;
+    height: 448px;
   }
 
   .mob {
@@ -558,8 +563,8 @@ button:active {
   }
 
   .dec {
-  display: block;
-}
+    display: block;
+  }
 
   .card-container {
     display: flex;
@@ -597,13 +602,6 @@ button:active {
     display: flex;
   }
 
-  .lang li {
-    display: flex;
-    flex-direction: column;
-    width: 122px;
-    height: 120px;
-  }
-
   .frame-arro {
     display: flex;
     justify-content: flex-end;
@@ -617,10 +615,10 @@ button:active {
 }
 
 @media (min-width: 768px) {
-   .toolbar {
+  .toolbar {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
   }
 
   .mylogo {
@@ -641,6 +639,13 @@ button:active {
     margin-left: 444px;
   }
 
+  .lang li {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+  }
+
   .nav ul li {
     margin: 10px;
   }
@@ -657,7 +662,6 @@ button:active {
     width: 100%;
     min-height: 100vh;
     padding: 22px;
-
   }
 
   .headl1 {
@@ -666,8 +670,8 @@ button:active {
   }
 
   .card-image img {
-    Width: 544px;
-    Height: 448px;
+    width: 544px;
+    height: 448px;
   }
 
   .mob {
@@ -675,8 +679,8 @@ button:active {
   }
 
   .dec {
-  display: block;
-}
+    display: block;
+  }
 
   .card-container {
     display: flex;
@@ -712,13 +716,6 @@ button:active {
 
   .lang {
     display: flex;
-  }
-
-  .lang li {
-    display: flex;
-    flex-direction: column;
-    width: 122px;
-    height: 120px;
   }
 
   .frame-arro {
