@@ -338,6 +338,10 @@ button:hover {
   background-color: #396fd2;
 }
 
+button:active {
+  background-color: #2230d2;
+}
+
 .about {
   display: flex;
   flex-direction: column;
