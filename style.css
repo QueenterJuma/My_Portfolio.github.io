@@ -700,6 +700,12 @@ button:active {
     flex-direction: row-reverse;
   }
 
+  .card-content {
+    width: 544px;
+    height: 465px;
+    margin-bottom: 10px;
+  }
+
   .about-page {
     display: flex;
     flex-direction: row;
