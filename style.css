@@ -474,7 +474,6 @@ button:active {
 
 .form-cantact input {
   border: 1px solid #cfd8cf;
-  border-radius: 8px;
   margin: 5px;
   padding: 16px;
   font-size: 17px;
@@ -486,7 +485,6 @@ button:active {
 
 .form-cantact textarea {
   border: 1px solid #cfd8cf;
-  border-radius: 8px;
   padding: 16px;
   margin-top: 10px;
   width: 327px;
@@ -704,6 +702,7 @@ button:active {
     width: 544px;
     height: 465px;
     margin-bottom: 10px;
+    margin-top: 1em;
   }
 
   .about-page {
@@ -736,10 +735,18 @@ button:active {
   }
 
   .form-container {
-    width: 569px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .form {
+  .form-cantact p {
+    width: 569px;
+    margin-top: 10px;
+    margin-bottom: 5px
+  }
+
+ .form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -755,5 +762,5 @@ button:active {
     width: 447px;
     height: 170px;
 
-  }
+  } 
 }
