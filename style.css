@@ -743,10 +743,10 @@ button:active {
   .form-cantact p {
     width: 569px;
     margin-top: 10px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
   }
 
- .form {
+  .form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -755,12 +755,10 @@ button:active {
   .form-cantact input {
     width: 447px;
     height: 48px;
-
   }
 
   .form-cantact textarea {
     width: 447px;
     height: 170px;
-
-  } 
+  }
 }
