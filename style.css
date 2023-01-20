@@ -734,4 +734,26 @@ button:active {
   .form-cantact {
     background-image: url(./image/dec-form.png);
   }
+
+  .form-container {
+    width: 569px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-cantact input {
+    width: 447px;
+    height: 48px;
+
+  }
+
+  .form-cantact textarea {
+    width: 447px;
+    height: 170px;
+
+  }
 }
