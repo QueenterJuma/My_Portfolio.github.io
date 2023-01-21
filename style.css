@@ -432,6 +432,9 @@ button:active {
   margin-top: 50px;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-cantact h2 {
@@ -455,14 +458,6 @@ button:active {
   text-align: center;
   font-weight: 400;
   font-size: 20px;
-}
-
-.form-cantact {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .form-container {
@@ -517,6 +512,7 @@ form {
   .mylogo {
     margin-left: 150px;
   }
+
   .toggle {
     display: none;
   }
@@ -643,7 +639,7 @@ form {
   .form-container {
     width: 70%;
   }
-  
+
   form input {
     border-radius: 0;
     width: 100%;
@@ -716,9 +712,11 @@ form {
   .dec {
     display: block;
   }
+
   .toggle {
     display: none;
   }
+
   .card-container {
     display: flex;
     flex-direction: row;
