@@ -10,6 +10,16 @@
   scroll-behavior: smooth;
 }
 
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -26,7 +36,7 @@
   color: #6070ff;
 }
 
-.nav {
+.nav ul {
   display: none;
 }
 
@@ -68,6 +78,11 @@
   font-size: 15px;
   line-height: 20px;
   color: #344563;
+}
+
+.tech ul li a {
+  text-decoration: none;
+  color: #6070ff;
 }
 
 .nav.open ul li a {
@@ -225,7 +240,7 @@
   background: #fff;
   border-radius: 1rem;
   padding: 1rem;
-  height: 570px;
+  height: 623px;
   width: 90%;
   margin: 0 auto;
 }
@@ -233,6 +248,17 @@
 .card-image img {
   width: 100%;
   height: auto;
+}
+
+.dec {
+  display: none;
+}
+
+.canopy {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .card-content {
@@ -251,7 +277,7 @@
 
 .card-content p {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #344563;
   margin-top: 14px;
@@ -260,14 +286,17 @@
 }
 
 .institution {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
+}
+
+.year {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b778c;
 }
 
 .dot {
@@ -279,9 +308,10 @@
 }
 
 .tech {
-  font-weight: 500px;
-  font-size: 15px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   color: #6070ff;
   display: flex;
   align-items: center;
@@ -466,4 +496,242 @@ button:active {
 
 .form-cantact button {
   margin-left: -190px;
+}
+
+@media (min-width: 489px) and (max-width: 767px) {
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mylogo {
+    margin-left: 150px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 390px;
+  }
+
+  .nav ul {
+    display: flex;
+  }
+
+  .nav-item {
+    margin-left: 444px;
+  }
+
+  .lang li {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+  }
+
+  .nav ul li {
+    margin: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .first-page {
+    background-image: url(./image/dec-intro.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+    padding: 22px;
+  }
+
+  .headl1 {
+    margin: 5em 18em 0;
+    width: 600px;
+  }
+
+  .card-image img {
+    width: 544px;
+    height: 448px;
+  }
+
+  .mob {
+    display: none;
+  }
+
+  .dec {
+    display: block;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #fff;
+    border-radius: 24px;
+    padding: 1rem;
+    height: 486px;
+    width: 1156px;
+    margin: 0 auto;
+    gap: 3.5em;
+  }
+
+  .two,
+  .four {
+    flex-direction: row-reverse;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5em;
+  }
+
+  .about-me-left {
+    width: 40%;
+  }
+
+  .about-me-right {
+    width: 60%;
+  }
+
+  .lang {
+    display: flex;
+  }
+
+  .frame-arro {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: -46px;
+  }
+
+  .form-cantact {
+    background-image: url(./image/dec-form.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mylogo {
+    margin-left: 150px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 390px;
+  }
+
+  .nav ul {
+    display: flex;
+  }
+
+  .nav-item {
+    margin-left: 444px;
+  }
+
+  .lang li {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+  }
+
+  .nav ul li {
+    margin: 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .first-page {
+    background-image: url(./image/dec-intro.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+    padding: 22px;
+  }
+
+  .headl1 {
+    margin: 5em 18em 0;
+    width: 600px;
+  }
+
+  .card-image img {
+    width: 544px;
+    height: 448px;
+  }
+
+  .mob {
+    display: none;
+  }
+
+  .dec {
+    display: block;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #fff;
+    border-radius: 24px;
+    padding: 1rem;
+    height: 486px;
+    width: 1156px;
+    margin: 0 auto;
+    gap: 3.5em;
+  }
+
+  .two,
+  .four {
+    flex-direction: row-reverse;
+  }
+
+  .card-content {
+    width: 544px;
+    height: 465px;
+    margin-bottom: 10px;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5em;
+  }
+
+  .about-me-left {
+    width: 40%;
+  }
+
+  .about-me-right {
+    width: 60%;
+  }
+
+  .lang {
+    display: flex;
+  }
+
+  .frame-arro {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: -46px;
+  }
+
+  .form-cantact {
+    background-image: url(./image/dec-form.png);
+  }
 }
