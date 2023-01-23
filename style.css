@@ -240,7 +240,7 @@
   background: #fff;
   border-radius: 1rem;
   padding: 1rem;
-  height: 623px;
+  height: auto;
   width: 90%;
   margin: 0 auto;
 }
@@ -263,7 +263,6 @@
 
 .card-content {
   width: 100%;
-  height: 57vh;
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
@@ -398,12 +397,6 @@ button:active {
   padding-left: 0.7rem;
 }
 
-.frame-arro {
-  margin-left: 316px;
-  position: relative;
-  top: -22px;
-}
-
 .arro {
   display: flex;
   justify-content: space-between;
@@ -439,6 +432,9 @@ button:active {
   margin-top: 50px;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-cantact h2 {
@@ -464,41 +460,49 @@ button:active {
   font-size: 20px;
 }
 
-.form-cantact form {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 
 .form-cantact input {
   border: 1px solid #cfd8cf;
-  border-radius: 8px;
-  margin: 5px;
-  padding: 16px;
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
   height: 48px;
-  width: 327px;
+  width: 90%;
 }
 
 .form-cantact textarea {
   border: 1px solid #cfd8cf;
-  border-radius: 8px;
-  padding: 16px;
-  margin-top: 10px;
-  width: 327px;
+  width: 90%;
   height: 170px;
   font-size: 17px;
 }
 
-.form-cantact button {
-  margin-left: -190px;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin-left: 30px;
 }
 
-@media (min-width: 489px) and (max-width: 767px) {
+@media only screen and (max-width: 656px) {
+  form input {
+    border-radius: 8px;
+  }
+
+  form textarea {
+    border-radius: 8px;
+  }
+}
+
+/* tablets size */
+@media only screen and (max-width: 1224px) and (min-width: 656px) {
   .toolbar {
     display: flex;
     justify-content: space-between;
@@ -509,18 +513,12 @@ button:active {
     margin-left: 150px;
   }
 
-  .nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 390px;
+  .toggle {
+    display: none;
   }
 
   .nav ul {
     display: flex;
-  }
-
-  .nav-item {
-    margin-left: 444px;
   }
 
   .lang li {
@@ -546,16 +544,29 @@ button:active {
     width: 100%;
     min-height: 100vh;
     padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .headl1 {
-    margin: 5em 18em 0;
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    display: grid;
+    padding: 7rem 0;
+    height: auto;
+    width: 100%;
+    gap: 7rem;
+    background: #e5e5e5;
   }
 
   .card-image img {
-    width: 544px;
-    height: 448px;
+    width: 100%;
+    height: 100%;
   }
 
   .mob {
@@ -572,11 +583,19 @@ button:active {
     justify-content: center;
     background: #fff;
     border-radius: 24px;
-    padding: 1rem;
-    height: 486px;
-    width: 1156px;
+    padding: 2rem;
+    height: auto;
+    width: 90%;
     margin: 0 auto;
     gap: 3.5em;
+  }
+
+  .card-image {
+    width: 50%;
+  }
+
+  .card-content {
+    width: 50%;
   }
 
   .two,
@@ -602,23 +621,40 @@ button:active {
     display: flex;
   }
 
-  .frame-arro {
+  form {
     display: flex;
-    justify-content: flex-end;
-    position: relative;
-    left: -46px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-paragraph {
+    padding: 0 10%;
   }
 
   .form-cantact {
     background-image: url(./image/dec-form.png);
   }
+
+  .form-container {
+    width: 70%;
+  }
+
+  form input {
+    border-radius: 0;
+    width: 100%;
+  }
 }
 
-@media (min-width: 768px) {
+/* desktop view */
+@media (min-width: 1225px) {
   .toolbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding-right: 20px;
   }
 
   .mylogo {
@@ -627,16 +663,11 @@ button:active {
 
   .nav {
     display: flex;
-    justify-content: flex-end;
-    margin-left: 390px;
+    align-self: flex-end;
   }
 
   .nav ul {
     display: flex;
-  }
-
-  .nav-item {
-    margin-left: 444px;
   }
 
   .lang li {
@@ -682,6 +713,10 @@ button:active {
     display: block;
   }
 
+  .toggle {
+    display: none;
+  }
+
   .card-container {
     display: flex;
     flex-direction: row;
@@ -704,6 +739,7 @@ button:active {
     width: 544px;
     height: 465px;
     margin-bottom: 10px;
+    margin-top: 1em;
   }
 
   .about-page {
@@ -724,14 +760,34 @@ button:active {
     display: flex;
   }
 
-  .frame-arro {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    left: -46px;
-  }
-
   .form-cantact {
     background-image: url(./image/dec-form.png);
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .form-cantact p {
+    width: 569px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-cantact input {
+    width: 447px;
+    height: 48px;
+  }
+
+  .form-cantact textarea {
+    width: 447px;
+    height: 170px;
   }
 }
