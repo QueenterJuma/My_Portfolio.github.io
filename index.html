@@ -61,7 +61,7 @@
                 <a href="#"><i class="fa-solid fa-m"></i></a>
               </li>
               <li>
-                <a href="#"><img src="./image/vector.png" alt="" /></a>
+                <a href="#"><img src="./image/vector.png" alt="vector" /></a>
               </li>
             </ul>
           </div>
@@ -182,7 +182,7 @@
       <div class="about-page">
         <div class="about-me-left">
           <div class="me">
-            <h1>About Myself</h1>
+            <h2>About Myself</h2>
             <p class="about-para">
               Hello I’m a software developer! I can help you build a product ,
               feature or website Look through some of my work and experience! If
@@ -213,7 +213,7 @@
                   <a href="#"><i class="fa-solid fa-m"></i></a>
                 </li>
                 <li>
-                  <a href="#"><img src="./image/vector.png" alt="" /></a>
+                  <a href="#"><img src="./image/vector.png" alt="vector" /></a>
                 </li>
               </ul>
             </div>
@@ -269,8 +269,11 @@
           project that needs coding. I’d ove to help with it
         </p>
         <form action="https://formspree.io/f/mqkjggay" method="post">
-          <input type="text" name="name" maxlength="30" placeholder="Queenter" required>
+          <label for="name"></label>
+          <input type="text" id="name" name="name" maxlength="30" placeholder="Queenter" required>
+          <label for="email"></label>
           <input type="email" id="email" placeholder="jumahqueenter@gmail.com" required>
+          <label for="text"></label>
           <textarea type="text" id="text" maxlength="500" rows="8" cols="50" placeholder="Write your message here" required></textarea>
           
           <button type="submit" id="button" class="get-in-touch">Get In Touch</button>

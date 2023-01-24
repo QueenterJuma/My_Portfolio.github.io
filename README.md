@@ -77,7 +77,7 @@ repo-name (Portfolio_one)
 ```
 Checkout the branch
 ```
-git checkout branch_Desktop
+git checkout master
 ```
 
 ### Run tests
@@ -95,6 +95,7 @@ npx stylelint "**/*.{css,scss}" in the terminal to check for linters errors
 
 ## Colaborators
 -stephenkati
+-shubhambhoyar077
 
 ## 🤝 Contributing <a name="contributing"></a>
 

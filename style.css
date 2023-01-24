@@ -166,7 +166,8 @@
   margin: 5rem 0;
 }
 
-.me h1 {
+.me h1,
+.me h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
