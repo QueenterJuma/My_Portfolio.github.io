@@ -47,6 +47,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Loom Video <a name="loom-video"></a>
+
+- [Live](https://www.loom.com/share/73532c8c9cff4d4b8fc5cd651cc8af87?t=389)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
