@@ -40,6 +40,17 @@
 -CSS
 -JavaScript
 
+### Tech Stack <a name="tech-stack"></a>
+HTML, CSS,JavaScript
+
+### Key Features <a name="key-features"></a>
+
+- **Header**
+- **Work Section**
+- **About me**
+- **Contact me**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -47,22 +58,28 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Loom Video <a name="loom-video"></a>
+
+- [Live](https://www.loom.com/share/73532c8c9cff4d4b8fc5cd651cc8af87?t=389)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+You can check the repo and see the desgin of the page
 ### Prerequisites
 
-In order to run this project you need:
- - npm and node.js
+Setup usual dev environment: VSCode, Live Server
 
 ### Setup
 
 Clone this repository to your desired folder:
--Open terminal in Vscode
--Navigate to the directory where you want to clone this repo.
--create new directory
--clone the repo using the command below
+
+```sh
+  cd my-folder
+  git clone https://github.com/QueenterJuma/Portfolio_one.github.io.git
+```
 
 
 ### Install
@@ -80,10 +97,20 @@ Checkout the branch
 git checkout master
 ```
 
+### Usage
+
+To run the project, Run `Live Server` from VSCode.
+
 ### Run tests
 
 To run tests, run the following command:
 npx stylelint "**/*.{css,scss}" in the terminal to check for linters errors
+
+### Deployment
+
+You can deploy this project using: Netlify, and some other hosting service: <a href="https://glitch.com/">glitch</a>, <a href="https://replit.com/">replit</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Author <a name="authors"></a>
 
@@ -93,9 +120,19 @@ npx stylelint "**/*.{css,scss}" in the terminal to check for linters errors
 - Twitter: (https://twitter.com/QueenJumah)
 - LinkedIn:(https://www.linkedin.com/in/queenter-juma-54a0b1222/)
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- Portfolio popup window
+-Form validation 
+-Local storage
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Colaborators
 -stephenkati
 -shubhambhoyar077
+-Moses-chibuike
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -110,7 +147,19 @@ If you like this project Give a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank -Microverseinc for allowing me to use this tamplate
+I would like to thank Microverse and my coding partners
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **How to make it mobile friendly?**
+
+  - Put a viewport tag in the header
+
+- **How to design the site?**
+
+  - Draw a mockup before start to code
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
