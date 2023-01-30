@@ -123,6 +123,9 @@ You can deploy this project using: Netlify, and some other hosting service: <a h
 ## 🔭 Future Features <a name="future-features"></a>
 
 - Portfolio popup window
+-Form validation 
+-Local storage
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
