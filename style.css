@@ -45,8 +45,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #6070ff;
-  mix-blend-mode: multiply;
+  background: #6070fff5;
+
   width: 100%;
   height: 100%;
 }
