@@ -261,11 +261,13 @@
     </section>
 
     <!-- modal-popup -->
-    <div class="popup">
+    <div id="popup-modal" onclick="closeModal()">
       <div class="popup-container">
         <div class="popup-header">
           <h2 class="popup-heading" id="popup-heading">Tonic</h2>
-          <img src="./image/close-btn.png" alt="cancel button" class="closebtn" id="closebtn">
+          <div class="popup-cancel">
+            <img src="./image/close-btn.png" alt="cancel button" class="closebtn" id="closebtn">
+          </div>
         </div>
         <ul class="popup-canopy" id="popup-canopy">
           <li>CANOPY</li>
@@ -297,7 +299,7 @@
               <button class="see-live" id="see-live"><p>See live</p><a class="pop-icon" id="pop-icon" href="#"><img src="./image/see-live.png" alt="live demo"></a></button>
             </span>
             <span class="btn-container">
-              <button class="see-source" id="see-source"><p>See source</p><a class="pop-icon" id="pop-icon" href="#"><i class='fa-brands fa-github'></i></a></button>
+              <button class="see-source" id="see-source"><p class="see">See source</p><a class="pop-icon" id="pop-icon" href="#"><i class='fa-brands fa-github'></i></a></button>
             </span>
 
           </div>
