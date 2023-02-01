@@ -492,6 +492,14 @@ form {
     margin-left: 30px;
 }
 
+.error {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #900;
+  display: none;
+}
+
 body {
     z-index: -1;
 }
@@ -1118,6 +1126,14 @@ body {
     .form-cantact textarea {
         width: 447px;
         height: 170px;
+    }
+    
+    .msgerror {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 28px;
+      color: #900;
+      display: none;
     }
 
     .closebtn {

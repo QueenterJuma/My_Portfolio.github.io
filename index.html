@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio Project</title>
-        <script src="https://kit.fontawesome.com/1572c8e00b.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header class="toolbar" id="toolbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Project</title>
+    <script src="https://kit.fontawesome.com/1572c8e00b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+    <header class="toolbar" id="toolbar">
             <div class="mylogo">
                 <a href="index.html">Juma</a>
             </div>
@@ -23,7 +23,7 @@
             <div class="toggle" id="toggle">
                 <div class="menu"></div>
             </div>
-        </header>
+     </header>
         <sectiion class="first-page" id="first_page">
             <div class="headline headl1">
                 <div class="me">
@@ -149,40 +149,25 @@
 
         <!-- modal-popup -->
         <section class="modal-wrapper close"></section>
-
         <footer class="form-cantact" id="contact">
-            <div class="form-container">
-                <h2>Contact me</h2>
-                <p class="form-paragraph">
-                    If you have an application you are interested in developing, a feature that you
-                    need built or a project that needs coding. I’d ove to help with it
-                </p>
-                <form action="https://formspree.io/f/mqkjggay" method="post">
-                    <label for="name"></label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        maxlength="30"
-                        placeholder="Queenter"
-                        required
-                    />
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="jumahqueenter@gmail.com" required />
-                    <label for="text"></label>
-                    <textarea
-                        type="text"
-                        id="text"
-                        maxlength="500"
-                        rows="8"
-                        cols="50"
-                        placeholder="Write your message here"
-                        required
-                    ></textarea>
-
-                    <button type="submit" id="button" class="get-in-touch">Get In Touch</button>
-                </form>
-            </div>
+          <div class="form-container">
+            <h2>Contact me</h2>
+            <p class="form-paragraph">
+              If you have an application you are interested in developing, a feature
+              that you need built or a project that needs coding. I’d ove to help
+              with it
+            </p>
+            <form action="https://formspree.io/f/mqkjggay" method="post" id="form">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" maxlength="30" placeholder="Queenter" required/>
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="jumahqueenter@gmail.com" required/>
+              <label for="text"></label>
+              <textarea type="text" id="text" maxlength="500" rows="8" cols="50" placeholder="Write your message here" required></textarea>
+              <span class="error msgerror" id="validError">Please fill in your email address in lower case</span>
+              <button type="submit" id="button" class="get-in-touch">Get In Touch</button>
+            </form>
+          </div>
         </footer>
         <script src="script.js"></script>
     </body>
