@@ -1,16 +1,18 @@
-const toggle = document.querySelector('#toggle');
-const nav = document.querySelector('.nav');
+const toggle = document.querySelector("#toggle");
+const nav = document.querySelector(".nav");
+const portfolioContainer = document.querySelector("#portfolio");
+const modal = document.querySelector("#modal");
 let menuOpen = false;
 
-toggle.addEventListener('click', () => {
+toggle.addEventListener("click", () => {
   if (!menuOpen) {
-    toggle.classList.add('open');
+    toggle.classList.add("open");
     menuOpen = true;
   } else {
-    toggle.classList.remove('open');
+    toggle.classList.remove("open");
     menuOpen = false;
   }
-  nav.classList.toggle('open');
+  nav.classList.toggle("open");
 });
 
 let counterImage = 0;
@@ -18,94 +20,112 @@ let counterImage = 0;
 
 const data = [
   {
-    id: "modal",
-    popup_heading: "Tonic",
-    popup_canopy: ["CANOPY", "Back End Dev", 2015],
-    popup_img: "pic1.png",
-    popup_text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    popup_tags: ["html", "css", "javascript"],
-    see_live: "#",
-    see_source: "#",
+    id: 1,
+    title: "Tonic",
+    sub_title: "CANOPY",
+    project_type: "Back End Dev",
+    project_date: "2015",
+    img: "pic1.png",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    tags: ["html", "css", "javascript"],
   },
 
   {
-    id: "modal",
-    popup_heading: "Tonic",
-    popup_canopy: ["CANOPY", "Back End Dev", 2015],
-    popup_img: "pic2.png",
-    popup_text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    popup_tags: ["html", "css", "javascript"],
-    see_live: "#",
-    see_source: "#",
+    id: 2,
+    title: "Facebook 360",
+    sub_title: "FACEBOOK",
+    project_type: "Full Stack Dev",
+    project_date: "2015",
+    img: "pic2.png",
+    description:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    tags: ["html", "css", "javascript, Ruby on rails,"],
   },
 
   {
-    id: "modal",
-    popup_heading: "Tonic",
-    popup_canopy: ["CANOPY", "Back End Dev", 2015],
-    popup_img: "pic3.png",
-    popup_text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    popup_tags: ["html", "css", "javascript"],
-    see_live: "#",
-    see_source: "#",
+    id: 3,
+    title: "Multi-Post Stories",
+    sub_title: "FACEBOOK",
+    project_type: "'Full Stack Dev",
+    project_date: "2015",
+    img: "pic3.png",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    tags: ["html", "css", "javascript"],
   },
 
   {
-    id: "modal",
-    popup_heading: "Tonic",
-    popup_canopy: ["CANOPY", "Back End Dev", 2015],
-    popup_img: "pic4.png",
-    popup_text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    popup_tags: ["html", "css", "javascript"],
-    see_live: "#",
-    see_source: "#",
+    id: 4,
+    title: "Uber Navigation",
+    sub_title: "CANOPY",
+    project_type: "Back End Dev",
+    project_date: "2015",
+    img: "pic4.png",
+    description:
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car",
+    tags: ["html", "css", "javascript"],
   },
 ];
 
-Object.keys(data).forEach((key) => {
-  document.getElementById(
-    "portfolio"
-  ).innerHTML += `<div class="card-container one">
+function listAllProjects() {
+  let projectHtml = "";
+
+  data.forEach((project) => {
+    let tagsHtml = "";
+
+    if (project.tags.length) {
+      project.tags.forEach((tag) => {
+        tagsHtml += `<li><a href="#">${tag}</a></li>`;
+      });
+    }
+
+    projectHtml += `<div class="card-container one">
         <div class="card-image">
-          <img class="mob" src="./image/pic1.png" alt="mobile img" />
-          <img  class="dec" src="./image/dec1.png" alt="desktop img">
+          <img class="mob" src="./image/${project.img}" alt="${project.img}" />
         </div>
         <div class="card-content">
-          <h3>${data[key].popup_heading}</h3>
+          <h3>${project.title}</h3>
           <ul class="institution">
-            <li><a href="#" class="canopy">${data[key].popup_canopy[0]}</a></li>
+            <li><a href="#" class="canopy">${project.sub_title}</a></li>
             <div class="dot"></div>
-            <li><a href="#" class="year">${data[key].popup_canopy[1]}</a></li>
+            <li><a href="#" class="year">${project.project_type}</a></li>
             <div class="dot"></div>
-            <li><a href="#" class="year">${data[key].popup_canopy[2]}</a></li>
+            <li><a href="#" class="year">${project.project_date}</a></li>
           </ul>
           <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
+           ${project.description}
           </p>
           <ul class="tech">
-            <li><a href="#">${data[key].popup_tags[0]}</a></li>
-            <li><a href="#">${data[key].popup_tags[1]}</a></li>
-            <li><a href="#">${data[key].popup_tags[2]}</a></li>
+            ${tagsHtml}
           </ul>
-          <button onclick = "openModal('${counterImage}')"><a href="#">See Project<a></button>
+           <a href = "#linked" ><button id="${project.id}">See Project></button></a>
+         
         </div>
-      </div>`;
-  counterImage += 1;
+      </div>
+    `;
+  });
+
+  portfolioContainer.innerHTML = projectHtml;
+}
+
+listAllProjects();
+
+portfolioContainer.addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
+    const button = e.target;
+    const id = button.getAttribute("id");
+    findProject(id);
+  }
 });
 
+function findProject(id) {
+  const project = data.find((project) => project.id === Number(id));
 
-const openModal = (portfolio) => {
-  document.getElementById("toolbar").style.filter = "blur(5px)";
-  document.getElementById("first_page").style.filter = "blur(5px)";
-  document.getElementById('modal').style.display = 'block';
-  document.getElementById(
-    "modal"
-  ).innerHTML = ` <div class="popup-container">
+  modal.classList.remove("close");
+
+  modal.innerHTML = `
+  <section class="popup-container" id = "linked"> 
         <div class="popup-header">
           <h2 class="popup-heading" id="popup_heading">Tonic</h2>
           <div class="popup-cancel">
@@ -121,7 +141,7 @@ const openModal = (portfolio) => {
         </ul>
       </div>
       <div class="popup-card">
-        <img src="./image/${data[portfolio].popup_img}" alt="card image" class="popup-img" id="popup_img">
+        <img src="./image/${project.img}" alt="card image" class="popup-img" id="popup_img">
       </div>
       <div class="popup-description">
         <p class="popup-text" id="popup_text">
@@ -137,6 +157,7 @@ const openModal = (portfolio) => {
           <li class="tags-item">javascript</li>
         </ul>
         <div class="popup-divider">
+          <hr>
           <div class="popbtn" id="popbtn">
             <span class="btn-container">
               <button class="see-live" id="see_live"><p>See live</p><a class="pop-icon" id="pop-icon" href="#"><img src="./image/see-live.png" alt="live demo"></a></button>
@@ -146,15 +167,105 @@ const openModal = (portfolio) => {
             </span>
           </div>
         </div>
-      </div>`;
-};
+      </section>`;
 
-const closeModal = () => {
-  document.getElementById("modal").style.display = "none";
-  document.getElementById("toolbar").style.filter = "blur(0px)";
-  document.getElementById("first_page").style.filter = "blur(0px)";
-};
-if (document.getElementById("modal").elements[1].value === true) {
-  closeModal();
-  openModal();
+  console.log(project);
 }
+
+modal.addEventListener("click", (e) => {
+  if (e.target.parentElement.classList.contains("popup-cancel")) {
+    modal.classList.add("close");
+  }
+});
+
+// Object.keys(data).forEach((key) => {
+//   document.getElementById(
+//     "portfolio"
+//   ).innerHTML += `<div class="card-container one">
+//         <div class="card-image">
+//           <img class="mob" src="./image/${data[key].popup_img}" alt="mobile img" />
+//            <img  class="dec" src="./image/dec1.png" alt="desktop img">
+//         </div>
+//         <div class="card-content">
+//           <h3>${data[key].popup_heading}</h3>
+//           <ul class="institution">
+//             <li><a href="#" class="canopy">${data[key].popup_canopy[0]}</a></li>
+//             <div class="dot"></div>
+//             <li><a href="#" class="year">${data[key].popup_canopy[1]}</a></li>
+//             <div class="dot"></div>
+//             <li><a href="#" class="year">${data[key].popup_canopy[2]}</a></li>
+//           </ul>
+//           <p>
+//             A daily selection of privately personalized reads; no accounts or
+//             sign-ups required.
+//           </p>
+//           <ul class="tech">
+//             <li><a href="#">${data[key].popup_tags[0]}</a></li>
+//             <li><a href="#">${data[key].popup_tags[1]}</a></li>
+//             <li><a href="#">${data[key].popup_tags[2]}</a></li>
+//           </ul>
+//           <button onclick = "openModal('${counterImage}')"><a href="#">See Project<a></button>
+//         </div>
+//       </div>`;
+//   counterImage += 1;
+// });
+
+// const openModal = (portfolio) => {
+//   document.getElementById("toolbar").style.filter = "blur(5px)";
+//   document.getElementById("first_page").style.filter = "blur(5px)";
+//   document.getElementById('modal').style.display = 'block';
+//   document.getElementById(
+//     "modal"
+//   ).innerHTML = ` <div class="popup-container">
+//         <div class="popup-header">
+//           <h2 class="popup-heading" id="popup_heading">Tonic</h2>
+//           <div class="popup-cancel">
+//             <img src="./image/close-btn.png" alt="cancel button" class="closebtn" id="closebtn">
+//           </div>
+//         </div>
+//         <ul class="popup-canopy" id="popup_canopy">
+//           <li>CANOPY</li>
+//           <li><img src="./image/dot.png" alt="dot" class="canopy-dot"></li>
+//           <li>Back End Dev</li>
+//           <li><img src="./image/dot.png" alt="dot" class="canopy-dot"></li>
+//           <li>2015</li>
+//         </ul>
+//       </div>
+//       <div class="popup-card">
+//         <img src="./image/${data[portfolio].popup_img}" alt="card image" class="popup-img" id="popup_img">
+//       </div>
+//       <div class="popup-description">
+//         <p class="popup-text" id="popup_text">
+//           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+//           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+//           when an unknown printer took a galley of type and scrambled it to make
+//           a type specimen book. It has survived not only five centuries, but also
+//           the leap into electronic typesetting, remaining essent
+//         </p>
+//         <ul class="popup-tags" id="popup_tags">
+//           <li class="tags-item">html</li>
+//           <li class="tags-item">css</li>
+//           <li class="tags-item">javascript</li>
+//         </ul>
+//         <div class="popup-divider">
+//           <div class="popbtn" id="popbtn">
+//             <span class="btn-container">
+//               <button class="see-live" id="see_live"><p>See live</p><a class="pop-icon" id="pop-icon" href="#"><img src="./image/see-live.png" alt="live demo"></a></button>
+//             </span>
+//             <span class="btn-container">
+//               <button class="see-source" id="see_source"><p class="see">See source</p><a class="pop-icon" id="pop-icon" href="#"><i class='fa-brands fa-github'></i></a></button>
+//             </span>
+//           </div>
+//         </div>
+//       </div>`;
+// };
+
+// const closeModal = () => {
+//   document.getElementById("modal").style.display = "none";
+//   document.getElementById("toolbar").style.filter = "blur(0px)";
+//   document.getElementById("first_page").style.filter = "blur(0px)";
+// };
+// if (document.getElementById("modal").elements[1].value === true) {
+//   closeModal();
+//   openModal();
+// }

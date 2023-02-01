@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pop.css">
+  </head>
+  <body>
+    <div id="modal" onclick="closeModal()" class="close">
+     <div class="popup-container">
+        <div class="popup-header">
+          <h2 class="popup-heading" id="popup_heading">Tonic</h2>
+          <div class="popup-cancel">
+            <img src="./image/close-btn.png" alt="cancel button" class="closebtn" id="closebtn">
+          </div>
+        </div>
+        <ul class="popup-canopy" id="popup_canopy">
+          <li>CANOPY</li>
+          <li><img src="./image/dot.png" alt="dot" class="canopy-dot"></li>
+          <li>Back End Dev</li>
+          <li><img src="./image/dot.png" alt="dot" class="canopy-dot"></li>
+          <li>2015</li>
+        </ul>
+     </div>
+      <div class="popup-card">
+        <img src="./image/${project.img}" alt="card image" class="popup-img" id="popup_img">
+      </div>
+      <div class="popup-description">
+        <p class="popup-text" id="popup_text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make 
+          a type specimen book. It has survived not only five centuries, but also 
+          the leap into electronic typesetting, remaining essent
+        </p>
+        <ul class="popup-tags" id="popup_tags">
+          <li class="tags-item">html</li>
+          <li class="tags-item">css</li>
+          <li class="tags-item">javascript</li>
+        </ul>
+        <div class="popup-divider">
+          <hr>
+          <div class="popbtn" id="popbtn">
+            <span class="btn-container">
+              <button class="see-live" id="see_live"><p>See live</p><a class="pop-icon" id="pop-icon" href="#"><img src="./image/see-live.png" alt="live demo"></a></button>
+            </span>
+            <span class="btn-container">
+              <button class="see-source" id="see_source"><p class="see">See source</p><a class="pop-icon" id="pop-icon" href="#"><i class='fa-brands fa-github'></i></a></button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
