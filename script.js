@@ -1,86 +1,86 @@
-const toggle = document.querySelector("#toggle");
-const nav = document.querySelector(".nav");
-const portfolioContainer = document.querySelector("#portfolio");
-const modal = document.querySelector("#modal");
+const toggle = document.querySelector('#toggle');
+const nav = document.querySelector('.nav');
+const portfolioContainer = document.querySelector('#portfolio');
+const modal = document.querySelector('.modal-wrapper');
 let menuOpen = false;
 
-toggle.addEventListener("click", () => {
-  if (!menuOpen) {
-    toggle.classList.add("open");
-    menuOpen = true;
-  } else {
-    toggle.classList.remove("open");
-    menuOpen = false;
-  }
-  nav.classList.toggle("open");
+toggle.addEventListener('click', () => {
+    if (!menuOpen) {
+        toggle.classList.add('open');
+        menuOpen = true;
+    } else {
+        toggle.classList.remove('open');
+        menuOpen = false;
+    }
+    nav.classList.toggle('open');
 });
 
 let counterImage = 0;
 /* popup-window */
 
 const data = [
-  {
-    id: 1,
-    title: "Tonic",
-    sub_title: "CANOPY",
-    project_type: "Back End Dev",
-    project_date: "2015",
-    img: "pic1.png",
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    tags: ["html", "css", "javascript"],
-  },
+    {
+        id: 1,
+        title: 'Tonic',
+        sub_title: 'CANOPY',
+        project_type: 'Back End Dev',
+        project_date: '2015',
+        img: 'pic1.png',
+        description:
+            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        tags: ['html', 'css', 'javascript'],
+    },
 
-  {
-    id: 2,
-    title: "Facebook 360",
-    sub_title: "FACEBOOK",
-    project_type: "Full Stack Dev",
-    project_date: "2015",
-    img: "pic2.png",
-    description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    tags: ["html", "css", "javascript, Ruby on rails,"],
-  },
+    {
+        id: 2,
+        title: 'Facebook 360',
+        sub_title: 'FACEBOOK',
+        project_type: 'Full Stack Dev',
+        project_date: '2015',
+        img: 'pic2.png',
+        description:
+            "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+        tags: ['html', 'css', 'javascript, Ruby on rails,'],
+    },
 
-  {
-    id: 3,
-    title: "Multi-Post Stories",
-    sub_title: "FACEBOOK",
-    project_type: "'Full Stack Dev",
-    project_date: "2015",
-    img: "pic3.png",
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    tags: ["html", "css", "javascript"],
-  },
+    {
+        id: 3,
+        title: 'Multi-Post Stories',
+        sub_title: 'FACEBOOK',
+        project_type: "'Full Stack Dev",
+        project_date: '2015',
+        img: 'pic3.png',
+        description:
+            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        tags: ['html', 'css', 'javascript'],
+    },
 
-  {
-    id: 4,
-    title: "Uber Navigation",
-    sub_title: "CANOPY",
-    project_type: "Back End Dev",
-    project_date: "2015",
-    img: "pic4.png",
-    description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car",
-    tags: ["html", "css", "javascript"],
-  },
+    {
+        id: 4,
+        title: 'Uber Navigation',
+        sub_title: 'CANOPY',
+        project_type: 'Back End Dev',
+        project_date: '2015',
+        img: 'pic4.png',
+        description:
+            'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
+        tags: ['html', 'css', 'javascript'],
+    },
 ];
 
 function listAllProjects() {
-  let projectHtml = "";
+    let projectHtml = '';
 
-  data.forEach((project) => {
-    let tagsHtml = "";
+    data.forEach((project) => {
+        let tagsHtml = '';
 
-    if (project.tags.length) {
-      project.tags.forEach((tag) => {
-        tagsHtml += `<li><a href="#">${tag}</a></li>`;
-      });
-    }
+        if (project.tags.length) {
+            project.tags.forEach((tag) => {
+                tagsHtml += `<li><a href="#">${tag}</a></li>`;
+            });
+        }
 
-    projectHtml += `<div class="card-container one">
+        projectHtml += `<div class="card-container one">
         <div class="card-image">
           <img class="mob" src="./image/${project.img}" alt="${project.img}" />
         </div>
@@ -104,78 +104,106 @@ function listAllProjects() {
         </div>
       </div>
     `;
-  });
+    });
 
-  portfolioContainer.innerHTML = projectHtml;
+    portfolioContainer.innerHTML = projectHtml;
 }
 
 listAllProjects();
 
-portfolioContainer.addEventListener("click", (e) => {
-  if (e.target.tagName === "BUTTON") {
-    const button = e.target;
-    const id = button.getAttribute("id");
-    findProject(id);
-  }
+portfolioContainer.addEventListener('click', (e) => {
+    if (e.target.tagName === 'BUTTON') {
+        const button = e.target;
+        const id = button.getAttribute('id');
+        findProject(id);
+    }
 });
 
 function findProject(id) {
-  const project = data.find((project) => project.id === Number(id));
+    const project = data.find((project) => project.id === Number(id));
 
-  modal.classList.remove("close");
+    let technologiesHtml = '';
+    if (project.tags.length) {
+        project.tags.forEach((technology) => {
+            technologiesHtml += `<li><a href="#">${technology}</a></li>`;
+        });
+    }
 
-  modal.innerHTML = `
-  <section class="popup-container" id = "linked"> 
-        <div class="popup-header">
-          <h2 class="popup-heading" id="popup_heading">Tonic</h2>
-          <div class="popup-cancel">
-            <img src="./image/close-btn.png" alt="cancel button" class="closebtn" id="closebtn">
+    modal.innerHTML = `
+  <div class="modal-card">
+  <div class="modal-header">
+      <h1 class="modal-title">${project.title}</h1>
+
+      <button title="close button" type="button" class="modal-close-btn">
+          <img src="image/close-btn.png" alt="close" width="100%" />
+      </button>
+  </div>
+  <div class="project-additional-info modal-additional-info">
+      <h5>${project.sub_title}</h5>
+      <div class="dot"></div>
+      <p>${project.project_type}</p>
+      <div class="dot"></div>
+      <p><time datetime="${project.project_date}">${project.project_date}</time></p>
+  </div>
+
+  <div class="project-image-container" style="background-image: url('./image/${project.img}');"></div>
+
+  <div class="modal-content">
+      <p class="project-description">${project.description}</p>
+
+      <div class="project-information-2">
+          <ul class="tech">
+              ${technologiesHtml}
+          </ul>
+
+          <div class="divider"></div>
+
+          <div class="modal-actions">
+
+              <a type="button" href="${project.liveVersion}" class="button">
+                <button id="${project.id}">
+                See live
+                  <img
+                      src="./image/see_live.svg"
+                      width="21px"
+                      alt="see live"
+                  />
+                </button>
+              </a>
+
+              <a type="button" href="${project.sourceLink}" class="button">
+
+              <button id="${project.id}">
+              See Source
+              <img
+                  src="./image/github_in_button.svg"
+                  width="21px"
+                  alt="github"
+              />
+                </button>
+              </a>
           </div>
-        </div>
-        <ul class="popup-canopy" id="popup_canopy">
-          <li>CANOPY</li>
-          <li><img src="./image/dot.png" alt="dot" class="canopy-dot"></li>
-          <li>Back End Dev</li>
-          <li><img src="./image/dot.png" alt="dot" class="canopy-dot"></li>
-          <li>2015</li>
-        </ul>
       </div>
-      <div class="popup-card">
-        <img src="./image/${project.img}" alt="card image" class="popup-img" id="popup_img">
-      </div>
-      <div class="popup-description">
-        <p class="popup-text" id="popup_text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make 
-          a type specimen book. It has survived not only five centuries, but also 
-          the leap into electronic typesetting, remaining essent
-        </p>
-        <ul class="popup-tags" id="popup_tags">
-          <li class="tags-item">html</li>
-          <li class="tags-item">css</li>
-          <li class="tags-item">javascript</li>
-        </ul>
-        <div class="popup-divider">
-          <hr>
-          <div class="popbtn" id="popbtn">
-            <span class="btn-container">
-              <button class="see-live" id="see_live"><p>See live</p><a class="pop-icon" id="pop-icon" href="#"><img src="./image/see-live.png" alt="live demo"></a></button>
-            </span>
-            <span class="btn-container">
-              <button class="see-source" id="see_source"><p class="see">See source</p><a class="pop-icon" id="pop-icon" href="#"><i class='fa-brands fa-github'></i></a></button>
-            </span>
-          </div>
-        </div>
-      </section>`;
+  </div>
+</div>
+  `;
 
-  console.log(project);
+    modal.classList.remove('close');
+    document.body.classList.add('hidescrollbar');
+
+    modal.addEventListener('click', (e) => {
+        if (e.target.parentElement.classList.contains('modal-close-btn')) {
+            modal.classList.add('close');
+            modal.innerHTML = '';
+            document.body.classList.remove('hidescrollbar');
+        }
+    });
 }
 
-modal.addEventListener("click", (e) => {
-  if (e.target.parentElement.classList.contains("popup-cancel")) {
-    modal.classList.add("close");
-  }
+modal.addEventListener('click', (e) => {
+    if (e.target.parentElement.classList.contains('popup-cancel')) {
+        modal.classList.add('close');
+    }
 });
 
 // Object.keys(data).forEach((key) => {
