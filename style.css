@@ -492,6 +492,14 @@ form {
   margin-left: 30px;
 }
 
+.error {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #900;
+  display: none;
+}
+
 #modal {
   box-sizing: border-box;
   display: flex;
@@ -1009,6 +1017,14 @@ body {
     height: 170px;
   }
 
+  .msgerror {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #900;
+    display: none;
+  }
+
   #modal {
     width: 90%;
     height: auto;
@@ -1028,42 +1044,11 @@ body {
     z-index: -1;
   }
 
-  /* .popup-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  width: 311px;
-  height: 84px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-} */
-
-  .popup-header {
-    /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-  width: 311px;
-  height: 40px;
-  flex: none;
-  order: 0;
-  flex-grow: 0; */
-  }
-
   .popup-heading {
     width: 1056px;
     height: 40px;
-
-    /* Header / 2 */
-
     font-size: 40px;
     line-height: 52px;
-    /* or 130% */
-
-    /* Theme 1 / Neutrals 1 */
-
     color: #091e42;
   }
 

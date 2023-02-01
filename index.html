@@ -163,37 +163,15 @@
           that you need built or a project that needs coding. I’d ove to help
           with it
         </p>
-        <form action="https://formspree.io/f/mqkjggay" method="post">
+        <form action="https://formspree.io/f/mqkjggay" method="post" id="form">
           <label for="name"></label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            maxlength="30"
-            placeholder="Queenter"
-            required
-          />
+          <input type="text" id="name" name="name" maxlength="30" placeholder="Queenter" required/>
           <label for="email"></label>
-          <input
-            type="email"
-            id="email"
-            placeholder="jumahqueenter@gmail.com"
-            required
-          />
+          <input type="email" id="email" placeholder="jumahqueenter@gmail.com" required/>
           <label for="text"></label>
-          <textarea
-            type="text"
-            id="text"
-            maxlength="500"
-            rows="8"
-            cols="50"
-            placeholder="Write your message here"
-            required
-          ></textarea>
-
-          <button type="submit" id="button" class="get-in-touch">
-            Get In Touch
-          </button>
+          <textarea type="text" id="text" maxlength="500" rows="8" cols="50" placeholder="Write your message here" required></textarea>
+          <span class="error msgerror" id="validError">Please fill in your email address in lower case</span>
+          <button type="submit" id="button" class="get-in-touch">Get In Touch</button>
         </form>
       </div>
     </footer>
