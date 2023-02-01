@@ -99,7 +99,7 @@ function listAllProjects() {
           <ul class="tech">
             ${tagsHtml}
           </ul>
-           <a href = "#linked" ><button id="${project.id}">See Project></button></a>
+           <a href = "#linked" ><button id="${project.id}">See Project</button></a>
          
         </div>
       </div>
