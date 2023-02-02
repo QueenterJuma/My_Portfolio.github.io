@@ -26,7 +26,6 @@ const data = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
   },
-  
   {
     id: 2,
     title: 'Facebook 360',
@@ -37,7 +36,6 @@ const data = [
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     tags: ['html', 'css', 'javascript, Ruby on rails,'],
   },
-  
   {
     id: 3,
     title: 'Multi-Post Stories',
@@ -48,7 +46,6 @@ const data = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
   },
-  
   {
     id: 4,
     title: 'Uber Navigation',
@@ -63,7 +60,6 @@ const data = [
 
 function listAllProjects() {
   let projectHtml = '';
-  
   data.forEach((project) => {
     let tagsHtml = '';
     
@@ -72,7 +68,6 @@ function listAllProjects() {
         tagsHtml += `<li><a href="#">${tag}</a></li>`;
       });
     }
-    
     projectHtml += `<div class="card-container one">
         <div class="card-image">
           <img class="mob" src="./image/${project.img}" alt="${project.img}" />
@@ -104,24 +99,14 @@ function listAllProjects() {
 
 listAllProjects();
 
-portfolioContainer.addEventListener('click', (e) => {
-  if (e.target.tagName === 'BUTTON') {
-    const button = e.target;
-    const id = button.getAttribute('id');
-    findProject(id);
-  }
-});
-
 function findProject(id) {
   const project = data.find((project) => project.id === Number(id));
-  
   let technologiesHtml = '';
   if (project.tags.length) {
     project.tags.forEach((technology) => {
       technologiesHtml += `<li><a href="#">${technology}</a></li>`;
     });
   }
-  
   modal.innerHTML = `
   <div class="modal-card">
   <div class="modal-header">
@@ -182,10 +167,16 @@ function findProject(id) {
   </div>
 </div>
   `;
-  
+
+  portfolioContainer.addEventListener('click', (e) => {
+  if (e.target.tagName === 'BUTTON') {
+    const button = e.target;
+    const id = button.getAttribute('id');
+    findProject(id);
+  }
+});
   modal.classList.remove('close');
   document.body.classList.add('hidescrollbar');
-  
   modal.addEventListener('click', (e) => {
     if (e.target.parentElement.classList.contains('modal-close-btn')) {
       modal.classList.add('close');
