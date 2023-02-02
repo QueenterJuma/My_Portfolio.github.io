@@ -165,13 +165,6 @@ function findProject(id) {
   </div>
 </div>
   `;
-  portfolioContainer.addEventListener('click', (e) => {
-    if (e.target.tagName === 'BUTTON') {
-      const button = e.target;
-      const id = button.getAttribute('id');
-      findProject(id);
-    }
-  });
   modal.classList.remove('close');
   document.body.classList.add('hidescrollbar');
   modal.addEventListener('click', (e) => {
@@ -182,6 +175,14 @@ function findProject(id) {
     }
   });
 }
+
+portfolioContainer.addEventListener('click', (e) => {
+  if (e.target.tagName === 'BUTTON') {
+    const button = e.target;
+    const id = button.getAttribute('id');
+    findProject(id);
+  }
+});
 
 modal.addEventListener('click', (e) => {
   if (e.target.parentElement.classList.contains('popup-cancel')) {
