@@ -62,7 +62,6 @@ function listAllProjects() {
   let projectHtml = '';
   data.forEach((project) => {
     let tagsHtml = '';
-    
     if (project.tags.length) {
       project.tags.forEach((tag) => {
         tagsHtml += `<li><a href="#">${tag}</a></li>`;
@@ -93,7 +92,6 @@ function listAllProjects() {
       </div>
       `;
   });
-  
   portfolioContainer.innerHTML = projectHtml;
 }
 
@@ -167,14 +165,14 @@ function findProject(id) {
   </div>
 </div>
   `;
-
+  
   portfolioContainer.addEventListener('click', (e) => {
-  if (e.target.tagName === 'BUTTON') {
-    const button = e.target;
-    const id = button.getAttribute('id');
-    findProject(id);
-  }
-});
+    if (e.target.tagName === 'BUTTON') {
+      const button = e.target;
+      const id = button.getAttribute('id');
+      findProject(id);
+    }
+  });
   modal.classList.remove('close');
   document.body.classList.add('hidescrollbar');
   modal.addEventListener('click', (e) => {
