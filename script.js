@@ -97,32 +97,32 @@ function listAllProjects() {
         </div>
       </div>
       `;
-    });
-
-    portfolioContainer.innerHTML = projectHtml;
+  });
+  
+  portfolioContainer.innerHTML = projectHtml;
 }
 
 listAllProjects();
 
 portfolioContainer.addEventListener('click', (e) => {
-    if (e.target.tagName === 'BUTTON') {
-        const button = e.target;
-        const id = button.getAttribute('id');
-        findProject(id);
-    }
+  if (e.target.tagName === 'BUTTON') {
+    const button = e.target;
+    const id = button.getAttribute('id');
+    findProject(id);
+  }
 });
 
 function findProject(id) {
-    const project = data.find((project) => project.id === Number(id));
-
-    let technologiesHtml = '';
-    if (project.tags.length) {
-        project.tags.forEach((technology) => {
-            technologiesHtml += `<li><a href="#">${technology}</a></li>`;
-        });
-    }
-
-    modal.innerHTML = `
+  const project = data.find((project) => project.id === Number(id));
+  
+  let technologiesHtml = '';
+  if (project.tags.length) {
+    project.tags.forEach((technology) => {
+      technologiesHtml += `<li><a href="#">${technology}</a></li>`;
+    });
+  }
+  
+  modal.innerHTML = `
   <div class="modal-card">
   <div class="modal-header">
       <h1 class="modal-title">${project.title}</h1>
@@ -182,23 +182,23 @@ function findProject(id) {
   </div>
 </div>
   `;
-
-    modal.classList.remove('close');
-    document.body.classList.add('hidescrollbar');
-
-    modal.addEventListener('click', (e) => {
-        if (e.target.parentElement.classList.contains('modal-close-btn')) {
-            modal.classList.add('close');
-            modal.innerHTML = '';
-            document.body.classList.remove('hidescrollbar');
-        }
-    });
+  
+  modal.classList.remove('close');
+  document.body.classList.add('hidescrollbar');
+  
+  modal.addEventListener('click', (e) => {
+    if (e.target.parentElement.classList.contains('modal-close-btn')) {
+      modal.classList.add('close');
+      modal.innerHTML = '';
+      document.body.classList.remove('hidescrollbar');
+    }
+  });
 }
 
 modal.addEventListener('click', (e) => {
-    if (e.target.parentElement.classList.contains('popup-cancel')) {
-        modal.classList.add('close');
-    }
+  if (e.target.parentElement.classList.contains('popup-cancel')) {
+    modal.classList.add('close');
+  }
 });
 /* form-validation */
 const form = document.getElementById('form');
