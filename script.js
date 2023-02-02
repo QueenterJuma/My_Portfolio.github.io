@@ -184,11 +184,7 @@ portfolioContainer.addEventListener('click', (e) => {
   }
 });
 
-modal.addEventListener('click', (e) => {
-  if (e.target.parentElement.classList.contains('popup-cancel')) {
-    modal.classList.add('close');
-  }
-});
+
 /* form-validation */
 const form = document.getElementById('form');
 form.addEventListener('submit', (e) => {
