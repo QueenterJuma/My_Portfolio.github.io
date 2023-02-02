@@ -165,7 +165,6 @@ function findProject(id) {
   </div>
 </div>
   `;
-  
   portfolioContainer.addEventListener('click', (e) => {
     if (e.target.tagName === 'BUTTON') {
       const button = e.target;
