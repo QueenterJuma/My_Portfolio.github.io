@@ -5,82 +5,75 @@ const modal = document.querySelector('.modal-wrapper');
 let menuOpen = false;
 
 toggle.addEventListener('click', () => {
-    if (!menuOpen) {
-        toggle.classList.add('open');
-        menuOpen = true;
-    } else {
-        toggle.classList.remove('open');
-        menuOpen = false;
-    }
-    nav.classList.toggle('open');
+  if (!menuOpen) {
+    toggle.classList.add('open');
+    menuOpen = true;
+  } else {
+    toggle.classList.remove('open');
+    menuOpen = false;
+  }
+  nav.classList.toggle('open');
 });
-
-let counterImage = 0;
 /* popup-window */
-
 const data = [
-    {
-        id: 1,
-        title: 'Tonic',
-        sub_title: 'CANOPY',
-        project_type: 'Back End Dev',
-        project_date: '2015',
-        img: 'pic1.png',
-        description:
-            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        tags: ['html', 'css', 'javascript'],
-    },
-
-    {
-        id: 2,
-        title: 'Facebook 360',
-        sub_title: 'FACEBOOK',
-        project_type: 'Full Stack Dev',
-        project_date: '2015',
-        img: 'pic2.png',
-        description:
-            "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-        tags: ['html', 'css', 'javascript, Ruby on rails,'],
-    },
-
-    {
-        id: 3,
-        title: 'Multi-Post Stories',
-        sub_title: 'FACEBOOK',
-        project_type: "'Full Stack Dev",
-        project_date: '2015',
-        img: 'pic3.png',
-        description:
-            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        tags: ['html', 'css', 'javascript'],
-    },
-
-    {
-        id: 4,
-        title: 'Uber Navigation',
-        sub_title: 'CANOPY',
-        project_type: 'Back End Dev',
-        project_date: '2015',
-        img: 'pic4.png',
-        description:
-            'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
-        tags: ['html', 'css', 'javascript'],
-    },
+  {
+    id: 1,
+    title: 'Tonic',
+    sub_title: 'CANOPY',
+    project_type: 'Back End Dev',
+    project_date: '2015',
+    img: 'pic1.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: ['html', 'css', 'javascript'],
+  },
+  
+  {
+    id: 2,
+    title: 'Facebook 360',
+    sub_title: 'FACEBOOK',
+    project_type: 'Full Stack Dev',
+    project_date: '2015',
+    img: 'pic2.png',
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    tags: ['html', 'css', 'javascript, Ruby on rails,'],
+  },
+  
+  {
+    id: 3,
+    title: 'Multi-Post Stories',
+    sub_title: 'FACEBOOK',
+    project_type: "'Full Stack Dev",
+    project_date: '2015',
+    img: 'pic3.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: ['html', 'css', 'javascript'],
+  },
+  
+  {
+    id: 4,
+    title: 'Uber Navigation',
+    sub_title: 'CANOPY',
+    project_type: 'Back End Dev',
+    project_date: '2015',
+    img: 'pic4.png',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
+    tags: ['html', 'css', 'javascript'],
+  },
 ];
 
 function listAllProjects() {
-    let projectHtml = '';
-
-    data.forEach((project) => {
-        let tagsHtml = '';
-
-        if (project.tags.length) {
-            project.tags.forEach((tag) => {
-                tagsHtml += `<li><a href="#">${tag}</a></li>`;
-            });
-        }
-
-        projectHtml += `<div class="card-container one">
+  let projectHtml = '';
+  
+  data.forEach((project) => {
+    let tagsHtml = '';
+    
+    if (project.tags.length) {
+      project.tags.forEach((tag) => {
+        tagsHtml += `<li><a href="#">${tag}</a></li>`;
+      });
+    }
+    
+    projectHtml += `<div class="card-container one">
         <div class="card-image">
           <img class="mob" src="./image/${project.img}" alt="${project.img}" />
         </div>
@@ -103,7 +96,7 @@ function listAllProjects() {
          
         </div>
       </div>
-    `;
+      `;
     });
 
     portfolioContainer.innerHTML = projectHtml;
