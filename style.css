@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -28,7 +28,7 @@
 }
 
 .mylogo a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -72,7 +72,7 @@
 }
 
 .nav ul li a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -86,7 +86,7 @@
 }
 
 .nav.open ul li a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -130,7 +130,7 @@
   background-color: #344563;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
-  content: "";
+  content: '';
 }
 
 .menu::before {
@@ -148,7 +148,7 @@
 }
 
 .first-page {
-  background-image: url("./image/mobile.png");
+  background-image: url('./image/mobile.png');
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -168,7 +168,7 @@
 
 .me h1,
 .me h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -180,7 +180,7 @@
 }
 
 .me p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -197,7 +197,7 @@
 }
 
 .social h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -264,12 +264,12 @@
 
 .card-content {
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
 
 .card-content h3 {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
@@ -320,7 +320,7 @@
 
 button {
   margin-top: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -379,7 +379,7 @@ button:active {
   justify-content: space-between;
   padding-top: 2rem;
   margin: 0 auto;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -403,7 +403,7 @@ button:active {
   justify-content: space-between;
   padding-top: 2rem;
   margin: 0 auto;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -491,6 +491,318 @@ form {
   margin-left: 30px;
 }
 
+.error {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #900;
+  display: none;
+}
+
+body {
+  z-index: -1;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(193 199 208 / 66%);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+  padding: 20px 10px 40px 10px;
+  box-sizing: border-box;
+}
+
+.modal-wrapper .modal-card {
+  width: 90%;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 15px;
+  margin: auto;
+}
+
+.modal-wrapper.close {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .modal-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-header button {
+  border: none;
+  background: transparent;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.modal-header button img {
+  filter: invert(1);
+}
+
+.popup-container .project-additional-info.modal-additional-info {
+  padding: 10px 0;
+}
+
+.project-image-container {
+  border-radius: 8px;
+  width: 100%;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-color: red;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-content .project-description {
+  padding: 15px 0;
+}
+
+.project-information-2 {
+  width: 100%;
+}
+
+.modal-content .divider {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ebecf0;
+  margin: 15px 0;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.modal-actions .project-btn {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+}
+
+.modal-actions a button:hover img {
+  filter: brightness(9.5);
+}
+
+.modal-actions a button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-additional-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.project-additional-info h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.project-additional-info p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin: 0;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.popup-canopy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 236px;
+  height: 32px;
+}
+
+.popup-img {
+  width: 311px;
+  height: 220px;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 311px;
+  height: 353px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.popup-text {
+  width: 311px;
+  height: 220px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.popup-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width: 53px;
+}
+
+.tags-item {
+  width: 73px;
+  height: 24px;
+  padding: 4px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.popup-divider {
+  width: 311px;
+  height: 17px;
+}
+
+.popbtn {
+  width: 311px;
+  height: 56px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.see-live {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 22px;
+  gap: 10px;
+  position: absolute;
+  width: 136px;
+  height: 48px;
+  left: 9px;
+  bottom: 4px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.see-source {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 14px;
+  gap: 10px;
+  position: absolute;
+  width: 146px;
+  height: 48px;
+  left: 157px;
+  bottom: 4px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.see {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.pop-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 3px;
+  color: #6070ff;
+}
+
+.seelive-txt {
+  width: 58px;
+  height: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #396df2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.hidescrollbar {
+  height: 100vh;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 656px) {
   form input {
     border-radius: 8px;
@@ -569,14 +881,6 @@ form {
     height: 100%;
   }
 
-  .mob {
-    display: none;
-  }
-
-  .dec {
-    display: block;
-  }
-
   .card-container {
     display: flex;
     flex-direction: row;
@@ -644,6 +948,39 @@ form {
     border-radius: 0;
     width: 100%;
   }
+
+  .popup-container {
+    padding: 60px 10px 40px 10px;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 30px 5px;
+  }
+
+  .modal-wrapper .modal-card {
+    width: 80%;
+  }
+
+  .project-image-container {
+    border-radius: 8px;
+    width: 100%;
+    min-height: 586px;
+    background-color: red;
+  }
+
+  .modal-content .project-description {
+    width: 100%;
+  }
+
+  .project-information-2 {
+    width: 40%;
+  }
 }
 
 /* desktop view */
@@ -703,14 +1040,6 @@ form {
   .card-image img {
     width: 544px;
     height: 448px;
-  }
-
-  .mob {
-    display: none;
-  }
-
-  .dec {
-    display: block;
   }
 
   .toggle {
@@ -789,5 +1118,191 @@ form {
   .form-cantact textarea {
     width: 447px;
     height: 170px;
+  }
+
+  .msgerror {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #900;
+    display: none;
+  }
+
+  .closebtn {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .popup-canopy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 236px;
+    height: 32px;
+  }
+
+  .popup-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .popup-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 311px;
+    height: 353px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .popup-text {
+    width: 311px;
+    height: 220px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .popup-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 53px;
+  }
+
+  .tags-item {
+    width: 73px;
+    height: 24px;
+    padding: 4px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    background: #ebebff;
+    border-radius: 8px;
+  }
+
+  .popup-divider {
+    width: 311px;
+    height: 17px;
+  }
+
+  .popbtn {
+    width: 311px;
+    height: 56px;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .see-live {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 22px;
+    gap: 10px;
+    position: absolute;
+    width: 136px;
+    height: 48px;
+    left: 9px;
+    bottom: 4px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+  }
+
+  .see-source {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 14px;
+    gap: 10px;
+    position: absolute;
+    width: 146px;
+    height: 48px;
+    left: 157px;
+    bottom: 4px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+  }
+
+  .see {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pop-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 3px;
+    color: #6070ff;
+  }
+
+  .seelive-txt {
+    width: 58px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #396df2;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .modal-wrapper {
+    padding: 60px 10px 40px 10px;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .project-image-container {
+    border-radius: 8px;
+    width: 100%;
+    min-height: 586px;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 30px 5px;
+  }
+
+  .modal-content .project-description {
+    width: 80%;
+  }
+
+  .project-information-2 {
+    width: 40%;
   }
 }
