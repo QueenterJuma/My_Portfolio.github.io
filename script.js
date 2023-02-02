@@ -200,6 +200,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 /* Local storage */
+let dataStr
 function storage(arg) {
   if (arg !== 'local') {
     const Data = {
@@ -207,12 +208,14 @@ function storage(arg) {
       Email: form.elements[1].value,
       Text: form.elements[2].value,
     };
-    localStorage.setItem('data', JSON.stringify(Data));
+    dataStr = JSON.stringify(Data)
+    localStorage.setItem('data', dataStr);
   } else return false;
   return true;
 }
 storage('local');
-const DataStored = JSON.parse(localStorage.getItem('data'));
+const DataStored = JSON.parse(dataStr);
+console.log(dataStr)
 form.elements[0].value = DataStored.Name;
 form.elements[1].value = DataStored.Email;
 form.elements[2].value = DataStored.Text;
