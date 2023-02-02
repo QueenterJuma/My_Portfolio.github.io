@@ -562,7 +562,7 @@ body {
 .project-image-container {
   border-radius: 8px;
   width: 100%;
-  height: 20vh;
+  height: 250px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -962,6 +962,7 @@ body {
     align-items: flex-start;
     gap: 15px;
     padding: 30px 5px;
+    overflow: auto;
   }
 
   .modal-wrapper .modal-card {
@@ -971,8 +972,7 @@ body {
   .project-image-container {
     border-radius: 8px;
     width: 100%;
-    height: 50vh;
-    background-color: red;
+    height: 350px;
   }
 
   .modal-content .project-description {
@@ -1288,7 +1288,7 @@ body {
   .project-image-container {
     border-radius: 8px;
     width: 100%;
-    height: 50vh;
+    height: 512px;
   }
 
   .modal-content {
