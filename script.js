@@ -30,7 +30,7 @@ const data = [
     sourceLink: 'https://github.com/QueenterJuma/React_Rest_Country_Capstone',
   },
   {
-    id: 1,
+    id: 2,
     title: 'To-Do List',
     sub_title: 'Daily Activity',
     project_type: 'Front End Dev',
@@ -43,7 +43,7 @@ const data = [
     sourceLink: 'https://github.com/QueenterJuma/To-do-list.github.io',
   },
   {
-    id: 2,
+    id: 3,
     title: 'CORPORATE VALUE CHAIN INNOVATION AND R&D LEADERS LIVEWORX 2023',
     sub_title: 'HTML/CSS CAPSTONE',
     project_type: 'Front End Dev',
@@ -56,7 +56,7 @@ const data = [
     sourceLink: 'https://github.com/QueenterJuma/Capstone_one.github.io',
   },
   {
-    id: 3,
+    id: 4,
     title: 'AWESOME BOOKS',
     sub_title: 'BOOK STORE',
     project_type: "'Front End Dev",
@@ -67,19 +67,6 @@ const data = [
     tags: ['html', 'css', 'javascript'],
     liveVersion: 'https://queenterjuma.github.io/-Awsome-book/',
     sourceLink: 'https://github.com/QueenterJuma/-Awsome-book',
-  },
-  {
-    id: 4,
-    title: 'MY PORTFOLIO',
-    sub_title: 'PORTFOLIO',
-    project_type: 'Front End Dev',
-    project_date: '2023',
-    img: 'portfolio.png',
-    description:
-      'The goal of this project is to create a UI personal portfolio site using Figma design and using Flexbox, Grid and float to position element in the page. Also, adding images and background to enhance the look of the website.',
-    tags: ['html', 'css', 'javascript'],
-    liveVersion: 'https://queenterjuma.github.io/Capstone_one.github.io/',
-    sourceLink: 'https://github.com/QueenterJuma/Capstone_one.github.io',
   },
 ];
 
