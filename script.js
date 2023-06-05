@@ -18,6 +18,19 @@ toggle.addEventListener('click', () => {
 const data = [
   {
     id: 1,
+    title: 'React_Rest_Country',
+    sub_title: 'Metrics webapp',
+    project_type: 'Front End Dev',
+    project_date: '2023',
+    img: 'rest country.png',
+    description:
+      'Rest Country is a React/Redux Metrics webapp that provides users with quick and easy access to information about countries worldwide. It offers details such as capital, population, currency, languages, and time zone. Users can explore photos, learn about neighboring countries, discover national anthems, and bookmark their favorite countries.',
+    tags: ['react', 'redux'],
+    liveVersion: 'https://the-countries.onrender.com/',
+    sourceLink: 'https://github.com/QueenterJuma/React_Rest_Country_Capstone',
+  },
+  {
+    id: 1,
     title: 'To-Do List',
     sub_title: 'Daily Activity',
     project_type: 'Front End Dev',
