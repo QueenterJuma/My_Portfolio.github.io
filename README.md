@@ -54,7 +54,7 @@ HTML, CSS,JavaScript
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live](https://queenterjuma.github.io/Portfolio_one.github.io/)
+- [Live](https://queenterjuma.github.io/My_Portfolio.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
